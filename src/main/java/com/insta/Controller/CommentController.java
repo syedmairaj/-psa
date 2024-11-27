@@ -42,6 +42,8 @@ public class CommentController {
     @GetMapping("{post_id}")
     public List<CommentDto> gdata(@PathVariable Long post_id){
         List<CommentDto> dtodata = pcservice.gdata(post_id);
+        System.out.println("1000");
+        System.out.println("9000");
         return dtodata;
     }
 
