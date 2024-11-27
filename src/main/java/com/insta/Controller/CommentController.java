@@ -44,6 +44,7 @@ public class CommentController {
         List<CommentDto> dtodata = pcservice.gdata(post_id);
         System.out.println("1000");
         System.out.println("9000");
+        System.out.println("paypal payment fixed");
         return dtodata;
     }
 
@@ -55,6 +56,7 @@ public class CommentController {
    // @ResponseStatus(HttpStatus.GONE)
     public List<Comment> delcomments(@PathVariable Long post_id){
         List<Comment> deldata = pcservice.delcomments(post_id);
+        System.out.println("paypal configured");
         return deldata;
     }
 
